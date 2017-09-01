@@ -1,0 +1,35 @@
+<footer class="FooterContainer"> <!--se pone un footer container para-->
+  <div class="container"> <!--se pone un contenedor //container-fluid-->
+    <div class="row">    <!--se pone una clase row para las grillas-->
+      <div class="col-md-4 Navbar-formfooter">
+        <div class="">
+        <form ng-submit="vm.formsubmit()">
+          <h4 class="Title-footer">¿quieres recibir las novedades?</h4>
+          <div class="form-group has-feedback" ng-Class="vm.validaCol"> <!--form-group organiza el formulario-->
+            <div class="" ng-bind-html="vm.el"></div>
+            <input type="email" placeholder="tu@correo.com " class="form-control">
+            <small class="text-muted">no compartiremos tu informacion</small>
+            <span ng-class="vm.validaColDiv" aria-hidden="true"></span>
+            <span class="sr-only">(Success)</span> <!--sr-only se usa para que las personas que oigan-->
+          </div>
+          <button class="btn btn-primary"type="submit" name="button">suscribirme</button>
+        </form>
+        </div>
+        </div>
+      <div class="col-md-3 col-md-offset-5 Navbar-footer">
+        <h4>navegacion</h4>
+        <ul class="nav"> <!-- etiqueta nav de bootstrap organiza l varra de navegacion-->
+          <li><a href="#" class="navbar-link">Home</a></li>
+          <li><a href="#" class="navbar-link">catalogo</a></li>
+          <li><a href="#" class="navbar-link">carrito</a></li>
+          <li><a href="#" class="navbar-link">login</a></li>
+          <li><a href="#" class="navbar-link">FAC</a></li>
+          <li><a href="#" class="navbar-link">contacto</a></li>
+
+        </ul>
+
+      </div> <!--offset es para dar una margen izquierda pero para columnas-->
+    </div>
+    </div>
+  </div>
+</footer>
